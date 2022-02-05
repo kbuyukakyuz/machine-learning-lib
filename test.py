@@ -16,7 +16,7 @@ x,y = rg.process(data)
 # Normalize the array
 x,y = rg.normalize(x, y)
 
-#Get the train and test data for a given size, randon seed state also can be changed
+#Get the train and test data for a given size, random seed state also can be changed
 x_train, x_test, y_train, y_test = rg.dissamble_data(x, y, sizeof_test=1/4)
 #Initialize the model for eta and number of iterations, for normalized data less conservative eta can be used 
 grad, cost_list = rg.model(x, y, 0.5, 10000)
